@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900');
+
+@import 'legacy/legacy';
+@import 'init/init';
+@import 'grid/grid';
+
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+body, html {
+    margin: 0;
+}
+
+body {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+@import 'vendor/slick.scss';
+@import 'vendor/slick-theme.scss';
+
+@import 'components/topbar';
+@import 'components/navigation';
+@import 'components/footer';
+@import 'components/links';
+@import 'components/buttons';
+@import 'components/resources.scss';
+@import 'components/alerts.scss';
+@import 'components/partner.scss';
+@import 'components/people';
+@import 'flexible-content/flexible-content';
+@import 'pages/homepage';
+@import 'pages/subpage';
+@import 'pages/resources';
+@import 'pages/news_events';
+@import 'pages/landing_page';
+@import 'pages/flexible_content_page';
+@import 'pages/about';

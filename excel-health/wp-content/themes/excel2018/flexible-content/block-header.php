@@ -1,0 +1,1 @@
+<h2 class="fc-header"><?php echo get_sub_field('header_text');?></h2>

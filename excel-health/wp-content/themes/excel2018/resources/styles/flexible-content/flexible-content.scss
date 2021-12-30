@@ -1,0 +1,26 @@
+@import './hero';
+@import './two-columns';
+@import './two-columns-with-headline';
+@import './tabbed-content';
+@import './icon-list';
+@import './numbers';
+@import './testimonial-slider';
+@import './testimonial-bubble';
+@import './text-content';
+@import './content-teaser';
+@import './portfolio-view';
+@import './people_list';
+
+
+body.page-template-page-flexible-content {
+  #content > section {
+    padding: $gutter 0;
+  }
+}
+
+h2.fc-header {
+  @include row();
+  padding: $gutter 0;
+  display: block;
+  text-align: center;
+}

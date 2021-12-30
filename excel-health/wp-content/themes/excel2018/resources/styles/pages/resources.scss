@@ -1,0 +1,159 @@
+.resources-resources {
+    position: relative;
+    background-color: $brand-light-gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+
+    &__pagination {
+      @include row();
+    }
+
+    &__inner {
+        @include row();
+
+        @media #{$breakpoint-md-up} {
+            max-width: 1200px + 40px;
+        }
+    }
+
+    &__form {
+        @include col(12);
+        @include clearfix;
+
+        margin-bottom: 40px;
+
+        @media #{$breakpoint-md-up} {
+            flex-basis: calc(100% - 40px);
+            max-width: calc(100% - 40px);
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    &__form-select-container {
+        display: block;
+        height: 50px;
+        width: 100%;
+        margin-right: 20px;
+        float: left;
+        margin-bottom: 10px;
+
+        @media #{$breakpoint-sm-up} {
+            margin-bottom: 0px;
+            width: auto;
+        }
+
+        > label {
+            display: block;
+            font-weight: 700;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__form-select {
+        position: relative;
+        box-sizing: border-box;
+        display: block;
+        vertical-align: middle;
+        overflow: hidden;
+        width: 100%;
+        border: 1px solid $brand-black;
+        background-color: $brand-white;
+        padding: 3px 30px 3px 5px;
+        cursor: pointer;
+
+        @media #{$breakpoint-sm-up} {
+            width: 250px;
+        }
+
+        &:after {
+            content: "\f078";
+            font: normal normal normal 14px/1 FontAwesome;
+            color: $brand-orange;
+            position: absolute;
+            top: 5px;
+            right: 8px;
+        }
+
+        span {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        select {
+            position: absolute;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            border: none;
+            background: none;
+            top: 0px;
+            left: 0px;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    &__form-submit {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        background-color: $brand-orange;
+        color: $brand-white;
+        padding: 0px 20px;
+        font-weight: 400;
+        cursor: pointer;
+        height: 28px;
+        border: none;
+        margin-top: 5px;
+        width: 100%;
+        line-height: 28px;
+        font-size: 0.8em;
+
+        @media #{$breakpoint-sm-up} {
+            margin-top: 21px;
+            width: auto;
+        }
+
+        &:hover {
+            background-color: $brand-light-orange;
+        }
+
+        input {
+            position: absolute;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            border: none;
+            background: none;
+            top: 0px;
+            left: 0px;
+            margin: 0;
+
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    &__resource {
+        @include col(xs, 12);
+        @include col(md, 6);
+
+        margin-bottom: 40px;
+
+        @media #{$breakpoint-md-up} {
+            flex-basis: calc(33.33% - 40px);
+            max-width: calc(33.33% - 40px);
+            margin-left: 20px;
+            margin-right: 20px;
+        }        
+    }
+}
+

@@ -1,0 +1,9 @@
+.person {
+  &--name {
+    margin-bottom: 0;
+  }
+  &--job-title {
+    margin: 0 0 $gutter 0;
+    
+  }
+}

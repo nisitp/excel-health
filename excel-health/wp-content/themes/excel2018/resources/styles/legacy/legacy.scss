@@ -1,0 +1,11 @@
+
+.legacy {
+    box-sizing: border-box;
+
+    @import './style';
+    @import './med';
+    @import './page-layout';
+    @import './slick';
+    @import './sml';
+    @import './xs';
+}

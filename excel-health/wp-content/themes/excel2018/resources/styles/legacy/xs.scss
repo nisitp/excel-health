@@ -1,0 +1,94 @@
+/** Phones **/
+@media (max-width: 480px){
+
+  
+  .container-sub{
+    width: 94%;
+  }
+
+  .login .btn-sml {
+    font-size: 12px;
+  }
+
+  .site-branding {
+    margin: 17px 0 0 3%;
+    padding-left:0;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .site-branding img {
+    width: 150px;
+  }
+
+  .banner {
+    height: 500px;
+  }
+
+  .banner .text h1 {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+  
+  .sub-banner .text p {
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .sub-banner .text {
+    left: 2%;
+    width: 96%;
+  }
+
+  .sub-banner .text {
+    padding-top: 0%;
+  }
+
+  .team-member {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .partners .oh {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-size: 3.0rem;
+  }
+
+  .services h3 {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+
+  .green-container,
+  .lt-blue-container {
+    padding: 30px 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+
+  .page-template-page-news-events .col-50,
+  .page-template-page-uni .col-45,
+  .page-template-page-uni .col-50  {
+    padding: 15px;
+  }
+
+  .resource-block .col-25 {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .resource-block .oh {
+    padding-left: 10px;
+  }
+
+}

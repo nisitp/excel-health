@@ -1,0 +1,13 @@
+.html-content {
+  position: relative;
+ padding: 0 20px;        
+ 
+  &__inner {
+      @include row();
+      
+      .html-content__content {
+        @include col(12);
+        @include clearfix;        
+      }
+  }
+}

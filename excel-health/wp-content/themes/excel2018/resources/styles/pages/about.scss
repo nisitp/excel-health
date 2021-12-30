@@ -1,0 +1,20 @@
+body {
+  .team-list {
+    
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    @media #{$breakpoint-md-up} {
+      grid-template-columns: repeat(4, 1fr);  
+      
+    }
+    
+    .team-member {
+      width: auto;
+      float: none;
+      margin: auto;
+    }
+  }  
+}

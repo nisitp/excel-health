@@ -1,0 +1,35 @@
+%button {
+//   margin: 20px auto 40px auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: $brand-orange;
+  color: $brand-white;
+  padding: 15px 20px 15px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: none;    
+    background-color: $brand-light-orange;    
+  }
+
+  display: block;
+  @media #{$breakpoint-sm-up} {
+    display: inline-block;
+  }
+}
+
+.btn, input[type="submit"] {
+  @extend %button;
+}
+
+.btn-white {
+  border:1px solid $brand-orange;
+  color: $brand-orange;
+  background: #fff;
+  
+  &:hover {
+    background: $brand-light-orange;
+    color: $brand-white;
+  }
+}

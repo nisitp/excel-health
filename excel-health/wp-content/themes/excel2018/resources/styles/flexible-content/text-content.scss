@@ -1,0 +1,68 @@
+.html-content, .fc-text-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--white { background-color: $brand-white; }
+    &--light-gray { background-color: $brand-light-gray; }
+    &--light-blue { background-color: $brand-blue; }
+    &--dark-blue { background-color: $brand-darker-blue; 
+      color: white;
+    }
+    &--light-green { background-color: $brand-light-green; }
+    &--dark-green { background-color: $brand-dark-green; color: white; }
+
+    &__container {
+        @include row();
+    }
+
+    &__inner {
+        @include col();
+    }
+
+    &__title {
+//        font-size: 1.8em;
+        margin: 0px auto;
+        text-align: center;
+
+        & + .fc-text-content__content {
+            margin-top: 30px;
+        }
+    }
+
+    &__content {
+        font-size: 1.1em;
+        line-height: 1.4em;
+        margin: 0px auto;
+        text-align: left;
+
+        column-count: 1;
+        column-gap: 40px;
+
+        > p:first-child {
+            margin-top: 0px;
+        }
+        
+        h1, h2, h3, p {
+          margin-bottom: $gutter;
+        }
+        
+    }
+    
+    &.ad {
+      padding: $gutter*3;
+      
+      background-size: cover;
+      background-position: left center;
+      
+      * {
+        text-align: center;
+      }
+      h2, h3 {
+        width: 100%;
+      }
+    }
+}

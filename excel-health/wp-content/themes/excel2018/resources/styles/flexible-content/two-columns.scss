@@ -1,0 +1,45 @@
+.fc-two-columns {
+    @media #{$breakpoint-md-up} {
+      background: linear-gradient(to right,$brand-light-gray 0,$brand-light-gray calc(50% - 11px),$brand-white calc(50% - 11px),$brand-white 50%, $brand-light-green calc(50% + 1px), $brand-light-green);
+
+        margin-bottom: 10px;
+
+        &__inner {
+            @include row();
+        }
+        
+        &__left,
+        &__right {
+            @include col();
+            margin-left: 0px;
+            margin-bottom: 0px;
+
+            > section {
+                margin-left: 0px;
+                margin-bottom: 0px;
+                background-color: transparent;
+            }
+        }
+
+        &__left {
+            padding-right: 30px;
+            //background-color: $brand-light-gray;
+        }
+
+        &__right {
+            padding-left: 30px;
+            //background-color: $brand-light-green;
+        }
+    }
+	&__left {
+	    &, > section{
+	    	background-color: $brand-light-gray;
+	    }
+	}
+	
+	&__right {
+	    &, > section{
+	    	background-color: $brand-light-green;
+	    }
+	}
+}

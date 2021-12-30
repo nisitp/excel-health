@@ -1,0 +1,97 @@
+/** Medium Devices/ Deslktops **/
+@media (min-width: 990px) and (max-width: 1100px) {
+
+  .banner .text {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    width: 60%;
+  }
+
+  .banner .text h1 {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+
+  .sub-banner .text {
+    left: 7%;
+    width: 86%;
+  }
+
+  .sub-banner .text p {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 26px;
+    font-size: 2.6rem;
+  }
+  
+}
+
+
+@media (min-width: 769px) and (max-width: 989px) {
+
+  .banner .text {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    width: 80%;
+  }
+
+  .banner .text h1 {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+
+  .sub-banner .text {
+    left: 7%;
+    width: 86%;
+  }
+
+  .sub-banner .text p {
+    font-size: 36px;
+  }
+
+  .banner .slick-slide {
+    padding-top:14%;
+  }
+
+  .partners .left {
+    line-height: 0;
+    max-width: 100%;
+    float: none;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
+
+  .intro .lrg {
+    font-size: 20px;
+  }
+
+  .intro .col-30 p {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+
+  .full {
+    padding-top: 25%;
+  }
+
+  .page-template-page-email-blast .banner .text {
+    width: 45%;
+  }
+
+  .page-template-page-email-blast .banner .text h1{
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
+
+}

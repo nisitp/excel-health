@@ -1,0 +1,113 @@
+.footer {
+    width: 100%;
+    padding: 40px 0px 20px 0px;
+    background-color: $brand-dark-blue;
+    color: $brand-white;
+    clear: both;
+    border-top: $gutter/2 solid #C1D554;
+    
+    &__inner {
+        @include row();
+    }
+
+    &__copyright {
+        text-align: right;
+        font-size: 0.7em;
+        @include col(12);
+
+        .menu-footer-legal-container {
+            display: inline;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: inline;
+
+                li {
+                    display: inline;
+
+                    a {
+                        color: $brand-white;
+                        border-left: 1px solid $brand-white;
+                        margin-left: 5px;
+                        padding-left: 5px;
+                        padding-bottom: 1px;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__nav {
+        margin-bottom: 20px;
+        @include col(12);
+
+        > div > ul {
+            @include row(true);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            margin-left: -10px;
+            margin-right: -10px;
+
+            > li {
+                @include col(sm);
+                @include col(xs, 12);
+
+                margin-bottom: 15px;
+
+                @media #{$breakpoint-sm-up} {
+                    margin-bottom: 0px;
+                }
+
+                > a {
+                    display: block;
+                    color: inherit;
+                    text-decoration: inherit;
+                    font-weight: bold;
+
+                    &[href]:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+
+                > ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    margin-top: 5px;
+
+                    @media #{$breakpoint-sm-up} {
+                        margin-top: 20px;
+                    }
+
+                    > li {
+                        margin-bottom: 8px;
+
+                        > a {
+                            text-decoration: none;
+                            color: inherit;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* hide the chat stuff when editing etc. */
+.logged-in #chat-widget-container {
+  display: none;
+}
